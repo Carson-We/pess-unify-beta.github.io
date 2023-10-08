@@ -1,23 +1,25 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Unify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            opacity: 0;
-            transform: translateY(100%);
-            transition: opacity 1s ease, transform 1s ease;
+            opacity: 0; 
+            transform: translateY(100%); 
+            transition: opacity 1s ease, transform 1s ease; 
             background-color: #000;
             color: #fff;
         }
 
         body.loaded {
-            opacity: 1;
-            transform: translateY(0);
+            opacity: 1; 
+            transform: translateY(0); 
         }
 
         header {
@@ -25,7 +27,7 @@
             color: #fff;
             padding: 20px;
             text-align: center;
-            cursor: pointer;
+            cursor: pointer; 
         }
 
         nav {
@@ -85,37 +87,6 @@
             text-align: center;
         }
 
-        .btn {
-            color: #f8fcfe;
-            background: transparent;
-            border: 2px solid #f8fcfd;
-            border-radius: 0px;
-            color: white;
-            padding: 8px 16px;
-            text-align: center;
-            display: inline-block;
-            font-size: 14px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .btn1 {
-            background-color: transparent;
-            color: white;
-            border: 2px solid #f8fcfd;
-            padding: 6px 12px;
-            font-size: 12px;
-            transition-duration: 0.3s;
-        }
-
-        .btn1:hover {
-            background-color: white;
-            color: black;
-        }
-
         .dropbtn {
             position: fixed;
             top: 20px;
@@ -159,14 +130,13 @@
             color: black;
         }
     </style>
-
     <script>
         window.addEventListener('load', function() {
-            document.body.classList.add('loaded');
+            document.body.classList.add('loaded'); 
         });
 
         function goToHomePage() {
-            window.location.href = "index.html";
+            window.location.href = "index_kr.html";
         }
     </script>
 </head>
@@ -180,26 +150,24 @@
                 <a href="index.html">English</a>
                 <a href="index_kr.html">한글</a>
             </div>
-        </div>
-    </header>   
-    
+    </header>
+
     <nav>
         <ul>
-            <li><a href="about_en.html" target="_blank">About</a></li>
-            <li><a href="contact_en.html" target="_blank">Contact</a></li>
-            <li><a href="discount_en.html" target="_blank">Discount</a></li>
-            <li><a href="member_en.html" target="_blank">Member</a></li>
+            <li><a href="about_kr.html" target="_blank">회사 소개</a></li>
+            <li><a href="contact_kr.html" target="_blank">연락하다t</a></li>
+            <li><a href="discount_kr.html" target="_blank">할인</a></li>
+            <li><a href="member_kr.html" target="_blank">회원</a></li>
         </ul>
-    </nav>  
+    </nav>    
 
-    <section>
-        <h2>Student Union Announcement</h2>
-        <p>A1</p>
-        <button class="btn btn1" onclick="window.open('a.html', '_blank')">Learn More</button>
-    </section>
-
+    <div class="contact-info">
+        <p>email:</p>
+        <p>Instagram: <a href="https://instagram.com/_pess_unify_?igshid=NzZhOTFlYzFmZQ=="><i class="fab fa-instagram"></i></a></p>
+    </div>
+  
     <footer>
-        Copyright <p>&copy; 2023 Unify All rights reserved</p>
+        <p>Copyright &copy; 2023 Unify 모든 권리 보유.</p>
     </footer>
 </body>
 </html>
